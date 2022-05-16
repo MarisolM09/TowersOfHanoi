@@ -42,15 +42,16 @@ const movePiece = (startStack, endStack) => {
 // Before you move, should you check if the move it actually allowed? Should 3 be able to be stacked on 2
 const isLegal = (startStack, endStack) => {
   // Your code here
-  // You can't move a big piece onto a small piece 
+  // You can't move a big piece onto a small piec***
   
-  let start = stacks[startStack][stacks[startStack].length - 1];
-
-  let end = stacks[endStack][stacks[endStack].length - 1]
- 
+  // checking for the last index in the array
+  let lastIndexStart = stacks[startStack][stacks[startStack].length - 1];
+  let lastIndexEnd = stacks[endStack][stacks[endStack].length - 1]
+  // is checking to if there is anything in the endstack, if there is it will compare to see if startstack in less than 
+  // the endstack it will allow move, if not it will not allow move.
   if(stacks[endStack].length === 0) {
     return true
-  } else if (start < end) {
+  } else if (lastIndexStart < lastIndexEnd) {
     return true
   }
   else {
