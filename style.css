@@ -43,16 +43,19 @@
 
 [data-color="green"] {
   height: 33px;
+  width: 50px;
   background-color: green;
 }
 
 [data-color="red"] {
   height: 33px;
+  width: 70px;
   background-color: red;
 }
 
 [data-color="yellow"] {
   height: 33px;
+  width: 100px;
   background-color: yellow;
 }
 
